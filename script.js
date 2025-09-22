@@ -32,6 +32,13 @@ function addPlace(locationName, placeName, open, color, link){
     p.innerHTML = `<a href="link">${placeName}: <span style="color: ${color}">${open}</span></a>`;
     location.appendChild(p);
 }
+function addOpennow(locationName, placeName, open, color, link){
+    const location = document.getElementById("opennow" + locationName.toLowerCase().replace(/ /g, "").replace(/'/g, "").replace(/@/g, ""))
+    const p = document.createElement("p");
+    p.innerHTML = `<a href="link">${placeName}: <span style="color: ${color}">${open}</span></a>`;
+    location.appendChild(p);
+    location.style.display = "block";
+}
 
 async function loadData() {
     try {
@@ -46,13 +53,16 @@ async function loadData() {
                         const [startTime, endTime] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime)){
                             addPlace(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7])
+                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7])
                         } else {
                             addPlace(locationName, placeName, `Closed (${startTime} - ${endTime})`, `#ff5353`, openTimes[7])
                         }
                     } else if (openTimes[dayOfweek].length <= 35){
                         const [startTime, endTime, startTime2, endTime2] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime) || isCurrentTimeInRange(startTime2, endTime2)){
-                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `gr#53ff5eeen`, openTimes[7])
+                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#53ff5e`, openTimes[7])
+                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7])
+
                         } else {
                             addPlace(locationName, placeName, `Closed (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#ff5353`, openTimes[7])
                         }
@@ -60,6 +70,7 @@ async function loadData() {
                         const [startTime, endTime, startTime2, endTime2, startTime3, endTime3] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime) || isCurrentTimeInRange(startTime2, endTime2) || isCurrentTimeInRange(startTime3, endTime3)){
                             addPlace(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7])
+                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7])
                         } else {
                             addPlace(locationName, placeName, `Closed (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#ff5353`, openTimes[7])
                         }
