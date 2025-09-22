@@ -37,7 +37,7 @@ a{
 }
 
 div{
-    margin: 0px;
+    margin-bottom: 0px;
 }
 
 @media (prefers-color-scheme: dark) { 
