@@ -102,7 +102,6 @@ div{
         padding: 20px;
         width: fit-content;
         text-align: center;
-        background-color: rgba(34, 34, 34, 1);
     }
 }
 @media (prefers-color-scheme: light) and (max-width: 480px), (prefers-color-scheme: light) and (max-height: 480px) {
