@@ -58,7 +58,7 @@ div{
         margin: 0 auto; 
         color: #f76a38; 
         border: 1px solid #f76a38;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 20px;
         width: fit-content;
         text-align: center;
@@ -77,6 +77,7 @@ div{
     }
     #header {
         background-color: rgba(26, 26, 26, 1);
+        width: 350px;
     }
 }
 
@@ -98,7 +99,7 @@ div{
         margin: 0 auto; 
         color: #ffffff; 
         background-color: #D73F09;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 20px;
         width: fit-content;
         text-align: center;
@@ -111,6 +112,9 @@ div{
     .place{
         background-color: rgb(255, 255, 255);
         border: none;
+        width: 350px;
+    }
+    #header{
         width: 350px;
     }
 }
