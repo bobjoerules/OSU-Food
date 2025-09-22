@@ -36,8 +36,8 @@ a{
     padding: 20px;
 }
 
-div{
-    margin-bottom: 0px;
+.row{
+    margin: -10px;
 }
 
 @media (prefers-color-scheme: dark) { 
@@ -56,6 +56,7 @@ div{
     }
     #header{
         margin: 0 auto; 
+        margin-bottom: 20px;
         color: #f76a38; 
         border: 1px solid #f76a38;
         border-radius: 20px;
@@ -97,6 +98,7 @@ div{
     }
     #header{
         margin: 0 auto; 
+        margin-bottom: 20px;
         color: #ffffff; 
         background-color: #D73F09;
         border-radius: 20px;
