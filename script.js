@@ -29,13 +29,13 @@ function isCurrentTimeInRange(startStr, endStr) {
 function addPlace(locationName, placeName, open, color, link){
     const location = document.getElementById(locationName.toLowerCase().replace(/ /g, "").replace(/'/g, "").replace(/@/g, ""))
     const p = document.createElement("p");
-    p.innerHTML = `<a href="link">${placeName}: <span style="color: ${color}">${open}</span></a>`;
+    p.innerHTML = `<a href="${link}">${placeName}: <span style="color: ${color}">${open}</span></a>`;
     location.appendChild(p);
 }
 function addOpennow(locationName, placeName, open, color, link){
     const location = document.getElementById("opennow" + locationName.toLowerCase().replace(/ /g, "").replace(/'/g, "").replace(/@/g, ""))
     const p = document.createElement("p");
-    p.innerHTML = `<a href="link">${placeName}: <span style="color: ${color}">${open}</span></a>`;
+    p.innerHTML = `<a href="${link}">${placeName}: <span style="color: ${color}">${open}</span></a>`;
     location.appendChild(p);
     location.style.display = "block";
 }
