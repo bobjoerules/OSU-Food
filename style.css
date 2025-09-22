@@ -65,7 +65,7 @@ div{
         background-color: rgba(34, 34, 34, 1);
     }
 }
-@media (prefers-color-scheme: dark) and (max-width: 480px) {
+@media (prefers-color-scheme: dark) and (max-width: 480px), (prefers-color-scheme: dark) and (max-height: 480px) {
     html {
         background: #000000;
         background-image: #000000;
@@ -73,7 +73,7 @@ div{
     .place{
         background-color: rgba(26, 26, 26, 1);
         border: none;
-        width: 300px;
+        width: 398px;
     }
     #header {
         background-color: rgba(26, 26, 26, 1);
@@ -103,13 +103,13 @@ div{
         margin: 0 auto; 
     }
 }
-@media (prefers-color-scheme: light) and (max-width: 480px) {
+@media (prefers-color-scheme: light) and (max-width: 480px), (prefers-color-scheme: light) and (max-height: 480px) {
     html {
         background: rgb(240, 240, 245);
     }
     .place{
         background-color: rgb(255, 255, 255);
         border: none;
-        width: 300px;
+        width: 398px;
     }
 }
