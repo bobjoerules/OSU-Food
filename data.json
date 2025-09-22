@@ -230,6 +230,16 @@
 			"Closed",
 			"https://pandaexpress.com"
 		],
+		"Happy Lemon*": [
+			"Closed",
+			"10:00:00 15:00:00",
+			"10:00:00 15:00:00",
+			"10:00:00 15:00:00",
+			"10:00:00 15:00:00",
+			"10:00:00 15:00:00",
+			"Closed",
+			"https://happylemonusa.com/menu/"
+		],
 		"Off the Quad": [
 			"Closed",
 			"9:00:00 15:00:00",
@@ -259,16 +269,6 @@
 			"8:00:00 15:00:00",
 			"Closed",
 			"https://food.oregonstate.edu/javastop"
-		],
-		"Happy Lemon*": [
-			"Closed",
-			"10:00:00 15:00:00",
-			"10:00:00 15:00:00",
-			"10:00:00 15:00:00",
-			"10:00:00 15:00:00",
-			"10:00:00 15:00:00",
-			"Closed",
-			"https://happylemonusa.com/menu/"
 		]
 		,
 		"Bites": [

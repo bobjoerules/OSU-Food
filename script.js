@@ -39,6 +39,16 @@ function addOpennow(locationName, placeName, open, color, link){
     location.appendChild(p);
     location.style.display = "block";
 }
+function scheduleReload() {
+    const now = new Date();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const minsToNextHalfHour = (minutes < 30 ? 30 - minutes : 60 - minutes);
+    const wait = (minsToNextHalfHour * 60 - seconds) * 1000;
+    setTimeout(() => {
+        location.reload();
+    }, wait);
+}
 
 async function loadData() {
     try {
@@ -85,4 +95,4 @@ async function loadData() {
     }
 }
 loadData()
-setInterval(function() {location.reload();}, 60000);
+scheduleReload();
