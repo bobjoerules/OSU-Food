@@ -32,7 +32,6 @@ a{
     border-radius: 10px;
     border: 1px solid black;
     width: 400px;
-    max-width: 400px;
     margin: 20px;
     padding: 20px;
 }
@@ -69,6 +68,7 @@ a{
     .place{
         background-color: rgba(26, 26, 26, 1);
         border: none;
+        width: 300px;
     }
 }
 
