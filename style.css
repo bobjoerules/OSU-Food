@@ -81,15 +81,14 @@ div{
         color: rgb(0, 0, 0);
     }
     html {
-        background: #ffffff;
-        background-image: #ffffff;
+       background: rgb(255, 255, 255);
     }
     a{
         color: black;
     }
     .place{
-        background-color: rgba(0, 0, 0, 0.5);
-        border: 1px solid black;
+        background: rgb(247, 247, 247);
+        border: none;
     }
     #header{
         margin: 0 auto; 
@@ -98,5 +97,15 @@ div{
         background-color: #D73F09;
         padding: 10px;
         margin: 0 auto; 
+    }
+}
+@media (prefers-color-scheme: light) and (max-width: 480px) {
+    html {
+        background: rgb(240, 240, 245);
+    }
+    .place{
+        background-color: rgb(255, 255, 255);
+        border: none;
+        width: 300px;
     }
 }
