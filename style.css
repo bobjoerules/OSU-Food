@@ -26,7 +26,7 @@ h2{
     padding: 10px;
     border-radius: 20px;
     border: 1px solid black;
-    width: 500px;
+    width: 400px;
     margin: 20px;
     padding: 20px;
 }
@@ -113,6 +113,11 @@ h2{
     }
     #header{
         width: 325px;
+    }
+}
+@media (min-width: 1700px) {
+    .place {
+        width: 500px;
     }
 }
 
