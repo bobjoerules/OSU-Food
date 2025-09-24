@@ -68,11 +68,11 @@ h2{
     .place{
         background-color: rgba(26, 26, 26, 1);
         border: none;
-        width: 350px;
+        width: 340px;
     }
     #header {
         background-color: rgba(26, 26, 26, 1);
-        width: 350px;
+        width: 340px;
     }
 }
 
@@ -109,10 +109,10 @@ h2{
     .place{
         background-color: rgb(255, 255, 255);
         border: none;
-        width: 350px;
+        width: 340px;
     }
     #header{
-        width: 350px;
+        width: 340px;
     }
 }
 
