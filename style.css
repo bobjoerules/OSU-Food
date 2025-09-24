@@ -26,7 +26,7 @@ h2{
     padding: 10px;
     border-radius: 20px;
     border: 1px solid black;
-    width: 400px;
+    width: 500px;
     margin: 20px;
     padding: 20px;
 }
@@ -68,11 +68,11 @@ h2{
     .place{
         background-color: rgba(26, 26, 26, 1);
         border: none;
-        width: 340px;
+        width: 325px;
     }
     #header {
         background-color: rgba(26, 26, 26, 1);
-        width: 340px;
+        width: 325px;
     }
 }
 
@@ -109,10 +109,10 @@ h2{
     .place{
         background-color: rgb(255, 255, 255);
         border: none;
-        width: 340px;
+        width: 325px;
     }
     #header{
-        width: 340px;
+        width: 325px;
     }
 }
 
