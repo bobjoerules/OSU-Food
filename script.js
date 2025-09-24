@@ -26,18 +26,20 @@ function isCurrentTimeInRange(startStr, endStr) {
     console.log(timeString >= start && timeString <= end)
     return timeString >= start && timeString <= end;
 }
-function addPlace(locationName, placeName, open, color, link){
+function addPlace(locationName, placeName, open, color, link, map){
     const location = document.getElementById(locationName.toLowerCase().replace(/ /g, "").replace(/'/g, "").replace(/@/g, ""))
     const p = document.createElement("p");
-    p.innerHTML = `<a href="${link}">${placeName}: <span style="color: ${color}">${open}</span></a>`;
+    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${link}"><img src="/images/info.svg"></a> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
     location.appendChild(p);
 }
-function addOpennow(locationName, placeName, open, color, link){
+function addOpennow(locationName, placeName, open, color, link, map){
     const location = document.getElementById("opennow" + locationName.toLowerCase().replace(/ /g, "").replace(/'/g, "").replace(/@/g, ""))
     const p = document.createElement("p");
-    p.innerHTML = `<a href="${link}">${placeName}: <span style="color: ${color}">${open}</span></a>`;
+    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${link}"><img src="/images/info.svg"></a> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
     location.appendChild(p);
     location.style.display = "block";
+    const status = document.getElementById("status")
+    status.style.display = 'none'
 }
 function scheduleReload() {
     const now = new Date();
@@ -62,31 +64,31 @@ async function loadData() {
                     if (openTimes[dayOfweek].length <= 17){
                         const [startTime, endTime] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime)){
-                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7])
-                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7])
+                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7], openTimes[8])
                         } else {
-                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime})`, `#ff5353`, openTimes[7])
+                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime})`, `#ff5353`, openTimes[7], openTimes[8])
                         }
                     } else if (openTimes[dayOfweek].length <= 35){
                         const [startTime, endTime, startTime2, endTime2] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime) || isCurrentTimeInRange(startTime2, endTime2)){
-                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#53ff5e`, openTimes[7])
-                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7])
+                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7], openTimes[8])
 
                         } else {
-                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#ff5353`, openTimes[7])
+                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#ff5353`, openTimes[7], openTimes[8])
                         }
                     } else {
                         const [startTime, endTime, startTime2, endTime2, startTime3, endTime3] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime) || isCurrentTimeInRange(startTime2, endTime2) || isCurrentTimeInRange(startTime3, endTime3)){
-                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7])
-                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7])
+                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7], openTimes[8])
                         } else {
-                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#ff5353`, openTimes[7])
+                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#ff5353`, openTimes[7], openTimes[8])
                         }
                     }
                 } else {
-                    addPlace(locationName, placeName, `Closed All Day`, `#ff5353`, openTimes[7])
+                    addPlace(locationName, placeName, `Closed All Day`, `#ff5353`, openTimes[7], openTimes[8])
                 }
             }
         }

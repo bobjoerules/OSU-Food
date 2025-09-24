@@ -8,7 +8,8 @@
 			"11:30:00 13:30:00",
 			"11:30:00 13:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/west-side-grill"
+			"https://food.oregonstate.edu/west-side-grill",
+			"https://maps.apple.com/place?address=351%20SW%2030th%20St,%20Corvallis,%20OR%20%2097330,%20United%20States&coordinate=44.564033,-123.283896&name=West%20Side%20Grill&place-id=I6394657C77309A43&map=explore"
 		],
 		"Serrano": [
 			"Closed",
@@ -18,7 +19,8 @@
 			"9:00:00 14:00:00",
 			"9:00:00 14:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/serrano-grill"
+			"https://food.oregonstate.edu/serrano-grill",
+			"https://maps.apple.com/place?address=351%20SW%2030th%20St,%20Corvallis,%20OR%2097331,%20United%20States&coordinate=44.563972,-123.283840&name=Serrano%20Grill&place-id=I67406F31F4C59809&map=explore"
 		],
 		"Ring Of Fire": [
 			"Closed",
@@ -28,17 +30,19 @@
 			"11:30:00 13:30:00",
 			"11:30:00 13:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/ring-fire"
+			"https://food.oregonstate.edu/ring-fire",
+			"https://maps.apple/p/bEYKCBioJxyXP-"
 		],
 		"EBGBs": [
 			"9:00:00 19:00:00",
-			"7:30:00 20:00:00",
-			"7:30:00 20:00:00",
-			"7:30:00 20:00:00",
-			"7:30:00 20:00:00",
-			"7:30:00 20:00:00",
+			"7:00:00 19:00:00",
+			"7:00:00 19:00:00",
+			"7:00:00 19:00:00",
+			"7:00:00 19:00:00",
+			"7:00:00 19:00:00",
 			"9:00:00 19:00:00",
-			"https://food.oregonstate.edu/ebgbs"
+			"https://food.oregonstate.edu/ebgbs",
+			"https://maps.apple/p/Ew4P1kwc21bhnx"
 		],
 		"Cooper's Creek": [
 			"Closed",
@@ -48,7 +52,8 @@
 			"11:30:00 13:30:00",
 			"11:30:00 13:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/coopers-creek"
+			"https://food.oregonstate.edu/coopers-creek",
+			"https://maps.apple/p/Ew4P1kwc21bhnx"
 		],
 		"Clubhouse Deli": [
 			"9:00:00 21:00:00",
@@ -58,7 +63,8 @@
 			"7:00:00 21:00:00",
 			"7:00:00 21:00:00",
 			"9:00:00 21:00:00",
-			"https://food.oregonstate.edu/clubhouse-deli"
+			"https://food.oregonstate.edu/clubhouse-deli",
+			"https://maps.apple/p/gWyyK8jIqmh0Fg"
 		],
 		"Bay Leaf": [
 			"Closed",
@@ -68,7 +74,8 @@
 			"11:30:00 13:30:00",
 			"11:30:00 13:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/bay-leaf"
+			"https://food.oregonstate.edu/bay-leaf",
+			"https://maps.apple/p/Ew4P1kwc21bhnx"
 		]
   	},
 	"Austin Hall": {
@@ -80,7 +87,8 @@
 			"7:30:00 18:00:00",
 			"7:30:00 18:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/trader-bings-cafe"
+			"https://food.oregonstate.edu/trader-bings-cafe",
+			"https://maps.apple/p/ti9_hmByWz79rS"
 		]
 	},
 	"McNary Dining": {
@@ -92,7 +100,8 @@
 			"10:30:00 23:30:00",
 			"10:30:00 23:30:00",
 			"10:30:00 23:30:00",
-			"https://food.oregonstate.edu/main-squeeze"
+			"https://food.oregonstate.edu/main-squeeze",
+			"https://maps.apple/p/koXx8HyhmF7YzW"
 		],
 		"RainTree": [
 			"7:00:00 15:00:00",
@@ -102,7 +111,8 @@
 			"7:00:00 15:00:00",
 			"7:00:00 15:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/raintree-coffee-co"
+			"https://food.oregonstate.edu/raintree-coffee-co",
+			"https://maps.apple/p/XYske7M8ZSNBed"
 		],
 		"La Calle": [
 			"18:30:00 23:00:00",
@@ -112,7 +122,8 @@
 			"18:30:00 23:00:00",
 			"Closed",
 			"Closed",
-			"https://food.oregonstate.edu/la-calle"
+			"https://food.oregonstate.edu/la-calle",
+			"https://maps.apple/p/XYske7M8ZSNBed"
 		],
 		"Five Four One": [
 			"17:00:00 21:00:00",
@@ -122,7 +133,8 @@
 			"10:00:00 21:00:00",
 			"10:00:00 21:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/five-four-one"
+			"https://food.oregonstate.edu/five-four-one",
+			"https://maps.apple/p/~TvoRP1XVxr8NR"
 		],
 		"East Side Eats": [
 			"9:30:00 19:30:00",
@@ -132,7 +144,8 @@
 			"7:00:00 19:30:00",
 			"7:00:00 19:30:00",
 			"9:30:00 19:30:00",
-			"https://food.oregonstate.edu/east-side-eats"
+			"https://food.oregonstate.edu/east-side-eats",
+			"https://maps.apple/p/XYske7M8ZSNBed"
 		],
 		"Calabaloo's": [
 			"11:00:00 20:00:00",
@@ -142,7 +155,8 @@
 			"11:00:00 20:00:00",
 			"11:00:00 20:00:00",
 			"11:00:00 20:00:00",
-			"https://food.oregonstate.edu/calabaloos"
+			"https://food.oregonstate.edu/calabaloos",
+			"https://maps.apple.com/place?address=1300%20SW%20Jefferson%20Ave,%20Corvallis,%20OR%2097331,%20United%20States&coordinate=44.564183,-123.272099&name=Calabaloo's&place-id=I3846E0F8940CB076&map=explore"
 		]
 	},
 	"South Side Station @ Arnold": {
@@ -154,7 +168,8 @@
 			"11:00:00 19:00:00",
 			"11:00:00 19:00:00",
 			"11:00:00 19:00:00",
-			"https://food.oregonstate.edu/southside-station-grill"
+			"https://food.oregonstate.edu/southside-station-grill",
+			"https://maps.apple/p/yev0JfqAMr3zVz"
 		],
 		"Pizza": [
 			"11:00:00 14:00:00 17:00:00 18:30:00",
@@ -164,7 +179,8 @@
 			"11:00:00 14:00:00 17:00:00 18:30:00",
 			"11:00:00 14:00:00 17:00:00 18:30:00",
 			"11:00:00 14:00:00 17:00:00 18:30:00",
-			"https://food.oregonstate.edu/southside-station-pizza"
+			"https://food.oregonstate.edu/southside-station-pizza",
+			"https://maps.apple/p/yev0JfqAMr3zVz"
 		],
 		"Nori": [
 			"17:00:00 19:00:00",
@@ -174,7 +190,8 @@
 			"11:00:00 19:00:00",
 			"11:00:00 14:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/nori"
+			"https://food.oregonstate.edu/nori",
+			"https://maps.apple/p/yev0JfqAMr3zVz"
 		],
 		"Global Fare": [
 			"7:30:00 11:00:00 11:30:00 14:00:00 16:30:00 19:00:00",
@@ -184,7 +201,8 @@
 			"7:30:00 11:00:00 11:30:00 14:00:00 16:30:00 19:00:00",
 			"7:30:00 11:00:00 11:30:00 14:00:00 16:30:00 19:00:00",
 			"7:30:00 11:00:00 11:30:00 14:00:00 16:30:00 19:00:00",
-			"https://food.oregonstate.edu/global-fare"
+			"https://food.oregonstate.edu/global-fare",
+			"https://maps.apple/p/kZazwKioSQdk7I"
 		],
 		"Deli": [
 			"11:00:00 16:30:00",
@@ -194,7 +212,8 @@
 			"11:00:00 14:00:00",
 			"11:00:00 14:00:00",
 			"11:00:00 16:30:00",
-			"https://food.oregonstate.edu/southside-station-deli"
+			"https://food.oregonstate.edu/southside-station-deli",
+			"https://maps.apple/p/yev0JfqAMr3zVz"
 		]
 	},
 	"Linc": {
@@ -206,7 +225,8 @@
 			"7:30:00 18:30:00",
 			"7:30:00 16:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/dam"
+			"https://food.oregonstate.edu/dam",
+			"https://maps.apple.com/place?address=3450%20SW%20Campus%20Way,%20Corvallis,%20OR%20%2097331,%20United%20States&coordinate=44.565721,-123.281250&name=The%20Dam&place-id=I191227D5E4191357&map=explore"
 		]
 	},
 	"Memorial Union": {
@@ -218,7 +238,8 @@
 			"9:30:00 14:30:00",
 			"9:30:00 14:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/rocket-burger"
+			"https://food.oregonstate.edu/rocket-burger",
+			"https://maps.apple/p/EDESWarU5WLqBJ"
 		],
 		"Panda Express*": [
 			"Closed",
@@ -228,7 +249,8 @@
 			"10:00:00 20:00:00",
 			"10:00:00 20:00:00",
 			"Closed",
-			"https://pandaexpress.com"
+			"https://pandaexpress.com",
+			"https://maps.apple/p/2yHSGi4ipbwHeU"
 		],
 		"Happy Lemon*": [
 			"Closed",
@@ -238,7 +260,8 @@
 			"10:00:00 15:00:00",
 			"10:00:00 15:00:00",
 			"Closed",
-			"https://happylemonusa.com/menu/"
+			"https://happylemonusa.com/menu/",
+			"https://maps.apple/p/4g-YyF0cQsYKAt"
 		],
 		"Off the Quad": [
 			"Closed",
@@ -248,7 +271,8 @@
 			"9:00:00 15:00:00",
 			"9:00:00 15:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/off-the-quad"
+			"https://food.oregonstate.edu/off-the-quad",
+			"https://maps.apple/p/EDESWarU5WLqBJ"
 		],
 		"North Porch Cafe": [
 			"Closed",
@@ -258,7 +282,8 @@
 			"10:30:00 14:30:00",
 			"10:30:00 14:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/north-porch-cafe"
+			"https://food.oregonstate.edu/north-porch-cafe",
+			"https://maps.apple/p/mQgIM-iSi6ZwZi"
 		],
 		"JavaStop": [
 			"Closed",
@@ -268,7 +293,8 @@
 			"8:00:00 15:00:00",
 			"8:00:00 15:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/javastop"
+			"https://food.oregonstate.edu/javastop",
+			"https://maps.apple/p/BVp3DSiU-T8wfn"
 		]
 		,
 		"Bites": [
@@ -279,7 +305,8 @@
 			"9:00:00 16:00:00",
 			"9:00:00 15:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/bites"
+			"https://food.oregonstate.edu/bites",
+			"https://maps.apple/p/6q~vGEH6X0-8Er"
 		]
 	},
 	"Valley Library": {
@@ -291,7 +318,8 @@
 			"8:00:00 15:00:00",
 			"8:00:00 15:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/rocket-burger"
+			"https://food.oregonstate.edu/rocket-burger",
+			"https://maps.apple/p/XR10LajPrbQV5z"
 		]
 	},
 	"Kelley Engineering Center": {
@@ -303,7 +331,8 @@
 			"8:30:00 14:30:00",
 			"8:30:00 14:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/ecafe"
+			"https://food.oregonstate.edu/ecafe",
+			"https://maps.apple.com/place?address=2500%20NW%20Monroe%20Ave,%20Corvallis,%20OR%2097331,%20United%20States&coordinate=44.566919,-123.278896&name=e.Cafe&place-id=IF24D45241B2502E9&map=explore"
 		]
 	},
 	"Dixon Recreation Center": {
@@ -315,19 +344,21 @@
 			"10:00:00 22:00:00",
 			"10:00:00 18:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/dixon-cafe"
+			"https://food.oregonstate.edu/dixon-cafe",
+			"https://maps.apple/p/0qyUfBLMwvS5Ho"
 		]
 	},
 	"Magruder Hall": {
 		"Coffee Corral": [
 			"Closed",
+			"7:30:00 16:00:00",
+			"7:30:00 16:00:00",
+			"7:30:00 16:00:00",
+			"7:30:00 16:00:00",
+			"7:30:00 16:00:00",
 			"Closed",
-			"Closed",
-			"Closed",
-			"Closed",
-			"Closed",
-			"Closed",
-			"https://food.oregonstate.edu/coffee-corral"
+			"https://food.oregonstate.edu/coffee-corral",
+			"https://maps.apple/p/WKaTbKWSD6p~V3"
 		]
 	},
 	"ILLC": {
@@ -339,7 +370,8 @@
 			"10:00:00 18:00:00",
 			"10:00:00 18:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/cascadia-market"
+			"https://food.oregonstate.edu/cascadia-market",
+			"https://maps.apple.com/place?address=Oregon%20State%20University,%201701%20SW%20Western%20Blvd,%20Corvallis,%20OR%2097331,%20United%20States&coordinate=44.559920,-123.276300&name=Cascadia%20Market&place-id=IC5ED4EDFC0549C24&map=explore"
 		],
 		"Cascadia Deli": [
 			"Closed",
@@ -349,7 +381,8 @@
 			"10:00:00 18:00:00",
 			"10:00:00 18:00:00",
 			"Closed",
-			"https://food.oregonstate.edu/cascadia-deli"
+			"https://food.oregonstate.edu/cascadia-deli",
+			"https://maps.apple.com/place?address=Oregon%20State%20University,%201701%20SW%20Western%20Blvd,%20Corvallis,%20OR%2097331,%20United%20States&coordinate=44.559920,-123.276300&name=Cascadia%20Market&place-id=IC5ED4EDFC0549C24&map=explore"
 		]
 		,
 		"Cascadia Cafe": [
@@ -360,31 +393,34 @@
 			"7:30:00 15:30:00",
 			"7:30:00 15:30:00",
 			"Closed",
-			"https://food.oregonstate.edu/cascadia-market"
+			"https://food.oregonstate.edu/cascadia-market",
+			"https://maps.apple.com/place?address=1701%20SW%20Western%20Blvd,%20Corvallis,%20OR%20%2097331,%20United%20States&coordinate=44.560167,-123.276133&name=Cascadia%20Cafe&place-id=IA0E914CC11FA4B6E&map=explore"
 		]
 	},
 	"Weatherford Hall": {
-	"Bing's Cafe": [
-		"9:00:00 20:00:00",
-		"7:30 20:00:00",
-		"7:30 20:00:00",
-		"7:30 20:00:00",
-		"7:30 20:00:00",
-		"Closed",
-		"Closed",
-		"https://food.oregonstate.edu/bings-cafe"
-	]
+		"Bing's Cafe": [
+			"9:00:00 20:00:00",
+			"7:30 20:00:00",
+			"7:30 20:00:00",
+			"7:30 20:00:00",
+			"7:30 20:00:00",
+			"Closed",
+			"Closed",
+			"https://food.oregonstate.edu/bings-cafe",
+			"https://maps.apple/p/3IqvHXLdvWLUEG"
+		]
 	},
 	"Linus Pauling Science Center": {
-	"Ava's Cafe": [
-		"Closed",
-		"8:00 16:30:00",
-		"8:00 16:30:00",
-		"8:00 16:30:00",
-		"8:00 16:30:00",
-		"8:00 16:00:00",
-		"Closed",
-		"https://food.oregonstate.edu/avas-cafe"
-	]
+		"Ava's Cafe": [
+			"Closed",
+			"8:00 16:30:00",
+			"8:00 16:30:00",
+			"8:00 16:30:00",
+			"8:00 16:30:00",
+			"8:00 16:00:00",
+			"Closed",
+			"https://food.oregonstate.edu/avas-cafe",
+			"https://maps.apple/p/0kLAMw83ozv2v5"
+		]
 	}
 }
