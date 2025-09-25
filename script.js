@@ -22,8 +22,8 @@ function isCurrentTimeInRange(startStr, endStr) {
     ].join(":");
     const start = padTime(startStr);
     const end = padTime(endStr);
-    console.log(`${timeString} ${start} ${end}`)
-    console.log(timeString >= start && timeString <= end)
+    console.log(end.slice(0, -6))
+    if (end.slice(0, -6) <= 5) return true
     return timeString >= start && timeString <= end;
 }
 function addPlace(locationName, placeName, open, color, link, map){
