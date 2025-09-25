@@ -64,27 +64,27 @@ async function loadData() {
                     if (openTimes[dayOfweek].length <= 17){
                         const [startTime, endTime] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime)){
-                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7], openTimes[8])
-                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addPlace(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addOpennow(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
                         } else {
-                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime})`, `#ff5353`, openTimes[7], openTimes[8])
+                            addPlace(locationName, placeName, `Closed (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)})`, `#ff5353`, openTimes[7], openTimes[8])
                         }
                     } else if (openTimes[dayOfweek].length <= 35){
                         const [startTime, endTime, startTime2, endTime2] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime) || isCurrentTimeInRange(startTime2, endTime2)){
-                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#53ff5e`, openTimes[7], openTimes[8])
-                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addPlace(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)} & ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addOpennow(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
 
                         } else {
-                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime} & ${startTime2} - ${endTime2})`, `#ff5353`, openTimes[7], openTimes[8])
+                            addPlace(locationName, placeName, `Closed (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)} & ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)})`, `#ff5353`, openTimes[7], openTimes[8])
                         }
                     } else {
                         const [startTime, endTime, startTime2, endTime2, startTime3, endTime3] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime) || isCurrentTimeInRange(startTime2, endTime2) || isCurrentTimeInRange(startTime3, endTime3)){
-                            addPlace(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7], openTimes[8])
-                            addOpennow(locationName, placeName, `Open (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addPlace(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)}, ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)} & ${startTime3.slice(0, -3)} - ${endTime3.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addOpennow(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)}, ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)} & ${startTime3.slice(0, -3)} - ${endTime3.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
                         } else {
-                            addPlace(locationName, placeName, `Closed (${startTime} - ${endTime}, ${startTime2} - ${endTime2} & ${startTime3} - ${endTime3})`, `#ff5353`, openTimes[7], openTimes[8])
+                            addPlace(locationName, placeName, `Closed (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)}, ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)} & ${startTime3.slice(0, -3)} - ${endTime3.slice(0, -3)})`, `#ff5353`, openTimes[7], openTimes[8])
                         }
                     }
                 } else {
