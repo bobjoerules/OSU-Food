@@ -22,20 +22,29 @@ function isCurrentTimeInRange(startStr, endStr) {
     ].join(":");
     const start = padTime(startStr);
     const end = padTime(endStr);
-    console.log(end.slice(0, -6))
     if (end.slice(0, -6) <= 5) return true
     return timeString >= start && timeString <= end;
 }
 function addPlace(locationName, placeName, open, color, link, map){
     const location = document.getElementById(locationName.toLowerCase().replace(/ /g, "").replace(/'/g, "").replace(/@/g, ""))
     const p = document.createElement("p");
-    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${link}"><img src="/images/info.svg"></a> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    if (link != 'None') {
+        p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${link}"><img src="/images/info.svg"></a> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    } else {
+        p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    }
     location.appendChild(p);
 }
 function addOpennow(locationName, placeName, open, color, link, map){
     const location = document.getElementById("opennow" + locationName.toLowerCase().replace(/ /g, "").replace(/'/g, "").replace(/@/g, ""))
     const p = document.createElement("p");
-    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${link}"><img src="/images/info.svg"></a> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    console.log(link != 'None')
+    if (link != 'None') {
+        p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${link}"><img src="/images/info.svg"></a> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    } else {
+        p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p> <a href="${map}"><img src="/images/location.svg"></a> <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    }
+    
     location.appendChild(p);
     location.style.display = "block";
     const status = document.getElementById("status")
@@ -82,7 +91,7 @@ async function loadData() {
                         const [startTime, endTime, startTime2, endTime2, startTime3, endTime3] = openTimes[dayOfweek].split(" ");
                         if (isCurrentTimeInRange(startTime, endTime) || isCurrentTimeInRange(startTime2, endTime2) || isCurrentTimeInRange(startTime3, endTime3)){
                             addPlace(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)}, ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)} & ${startTime3.slice(0, -3)} - ${endTime3.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
-                            addOpennow(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)}, ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)} & ${startTime3.slice(0, -3)} - ${endTime3.slice(0, -3)})`, `#53ff5e`, openTimes[7], openTimes[8])
+                            addOpennow(locationName, placeName, `Open (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)}, ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)} & ${startTime3.slice(0, -3)} - ${endTime3.slice(0, -3)})`, `#uu`, openTimes[7], openTimes[8])
                         } else {
                             addPlace(locationName, placeName, `Closed (${startTime.slice(0, -3)} - ${endTime.slice(0, -3)}, ${startTime2.slice(0, -3)} - ${endTime2.slice(0, -3)} & ${startTime3.slice(0, -3)} - ${endTime3.slice(0, -3)})`, `#ff5353`, openTimes[7], openTimes[8])
                         }
