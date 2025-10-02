@@ -43,6 +43,9 @@ h2{
     a{
         color: lightgray;
     }
+    .openplaces{
+        border: 1px solid #006f07;
+    }
     .place{
         background-color: rgba(34, 34, 34, 1);
         border: none;
@@ -89,6 +92,9 @@ h2{
     .place{
         background: rgb(247, 247, 247);
         border: none;
+    }
+    .openplaces{
+        border: 1px solid #53ff5e;
     }
     #header{
         margin: 0 auto; 
