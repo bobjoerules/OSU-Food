@@ -73,6 +73,9 @@ h2{
         border: none;
         width: 320px;
     }
+    .openplaces{
+        border: 1px solid #006f07;
+    }
     #header {
         background-color: rgba(26, 26, 26, 1);
         width: 320px;
@@ -116,6 +119,9 @@ h2{
         background-color: rgb(255, 255, 255);
         border: none;
         width: 320px;
+    }
+    .openplaces{
+        border: 1px solid #53ff5e;
     }
     #header{
         width: 320px;
