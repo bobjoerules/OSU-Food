@@ -38,7 +38,7 @@ function addPlace(locationName, placeName, open, color, link, map, phone){
     } else {
         linkbutton = ``
     }
-    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p>${linkbutton} <a href="${map}"><img src="/images/location.svg"></a>${number} <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p>${linkbutton} <a href="${map}"><img src="/images/location.svg"></a>${number}`;
     location.appendChild(p);
 }
 function addOpennow(locationName, placeName, open, color, link, map, phone){
@@ -58,7 +58,7 @@ function addOpennow(locationName, placeName, open, color, link, map, phone){
         linkbutton = ``
     }
 
-    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p>${linkbutton} <a href="${map}"><img src="/images/location.svg"></a>${number} <a href="https://forms.gle/Uhx4LgysA6JcokQF7"><img src="/images/report.svg"></a>`;
+    p.innerHTML = `<p>${placeName}: <span style="color: ${color}">${open}</span></p>${linkbutton} <a href="${map}"><img src="/images/location.svg"></a>${number}`;
     
     location.appendChild(p);
     location.style.display = "block";
